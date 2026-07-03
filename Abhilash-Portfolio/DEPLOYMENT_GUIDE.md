@@ -37,10 +37,13 @@ This guide will walk you through deploying your portfolio to GitHub Pages step b
    style.css
    script.js
    README.md
+   DEPLOYMENT_GUIDE.md
+   QUICK_START.md
+   CNAME_README.md
    LICENSE
    .gitignore
    robots.txt
-   CNAME (only if using custom domain)
+   CNAME (leave empty unless using custom domain)
    assets/ (folder with profile.jpg and resume.pdf)
    ```
 3. Commit message: "Add portfolio files"
@@ -135,16 +138,36 @@ Ensure you have:
 
 ## Using a Custom Domain (Optional)
 
+⚠️ **Skip this section if using the default GitHub Pages URL** (username.github.io)
+
 If you want to use your own domain (e.g., `abhilash.dev`):
 
 ### Step 1: Configure CNAME File
 
-1. Edit the `CNAME` file in your repository
-2. Remove the `#` and replace with your domain:
+1. Open the `CNAME` file in your repository (currently empty)
+2. Add ONLY your domain name (no http://, no comments, no extra text):
    ```
    yourdomain.com
    ```
-3. Save and commit
+   **IMPORTANT**: The file should contain ONLY the domain name, nothing else!
+   
+   ✅ **CORRECT Examples:**
+   ```
+   example.com
+   ```
+   OR
+   ```
+   www.example.com
+   ```
+   
+   ❌ **WRONG Examples:**
+   ```
+   # my domain
+   https://example.com
+   www.example.com/portfolio
+   ```
+
+3. Save and commit the file
 
 ### Step 2: Configure DNS Settings
 

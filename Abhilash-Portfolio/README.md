@@ -26,8 +26,16 @@ Abhilash-Portfolio/
 │   ├── profile.jpg    # Profile photo
 │   └── resume.pdf     # Downloadable resume
 ├── README.md          # Project documentation
+├── DEPLOYMENT_GUIDE.md # Step-by-step deployment instructions
+├── QUICK_START.md     # 5-minute quick start guide
+├── CNAME              # Custom domain config (empty by default)
+├── CNAME_README.md    # Instructions for custom domain setup
+├── LICENSE            # MIT License
+├── robots.txt         # SEO configuration
 └── .gitignore         # Git ignore file
 ```
+
+**Note**: The CNAME file is empty by default. Only add your domain if using a custom domain (see [CNAME_README.md](CNAME_README.md)).
 
 ## 🛠️ Technologies Used
 

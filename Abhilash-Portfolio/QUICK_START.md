@@ -26,7 +26,7 @@ Make sure you have:
 4. Select **Public**
 5. Click **"Create repository"**
 6. Click **"Upload files"**
-7. Drag ALL your portfolio files
+7. Drag ALL your portfolio files (CNAME can stay empty)
 8. Click **"Commit changes"**
 9. Go to **Settings** → **Pages**
 10. Source: Select **main** branch
@@ -101,3 +101,15 @@ Edit `index.html` → Find `<section id="projects">`
 **That's it! Your portfolio is ready to deploy! 🚀**
 
 Any issues? Check [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for detailed troubleshooting.
+
+---
+
+## 📌 Additional Notes
+
+### Custom Domain
+The CNAME file is empty by default. **Only edit it if you have a custom domain** (like yourname.com). For instructions, see [CNAME_README.md](CNAME_README.md).
+
+### Default Setup
+By default, your portfolio will be available at:
+- User site: `https://yourusername.github.io`
+- Project site: `https://yourusername.github.io/Abhilash-Portfolio`
