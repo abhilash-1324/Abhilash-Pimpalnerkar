@@ -1,0 +1,8 @@
+# This file is for SEO - allows search engines to crawl your portfolio
+# To use: Upload this file to your GitHub Pages repository
+
+User-agent: *
+Allow: /
+
+# Sitemap location (update with your actual GitHub Pages URL)
+# Sitemap: https://yourusername.github.io/Abhilash-Portfolio/sitemap.xml
