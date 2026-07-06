@@ -70,20 +70,20 @@ navLinks.forEach(link => {
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(15, 23, 42, 0.98)';
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
     } else {
-        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
-        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.4)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
     }
 });
 
 // ========================================
-// Scroll Reveal Animation
+// Scroll Reveal Animation with Stagger Effect
 // ========================================
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -97,7 +97,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 const animateOnScroll = document.querySelectorAll(
-    '.skill-card, .project-card, .timeline-item, .stat-item, .contact-item'
+    '.skill-card, .project-card, .timeline-item, .contact-item'
 );
 
 animateOnScroll.forEach(el => {
