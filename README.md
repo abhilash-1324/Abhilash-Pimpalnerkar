@@ -1,11 +1,13 @@
 # 👨‍💻 Abhilash Pimpalnerkar - Professional Portfolio
 
-A modern, responsive portfolio website showcasing my experience as a Senior DevOps & Cloud Engineer. Built with pure HTML, CSS, and JavaScript for optimal performance and easy hosting on GitHub Pages.
+A modern, vibrant portfolio website with Cayman-inspired gradient design showcasing my experience as a Senior DevOps & Cloud Engineer. Built with pure HTML, CSS, and JavaScript featuring a beautiful blue-to-teal gradient header for optimal performance and easy hosting on GitHub Pages.
 
 ## 🌟 Features
 
+- **Cayman-Inspired Design**: Beautiful gradient theme with teal-green colors
 - **Responsive Design**: Fully responsive layout that works seamlessly on desktop, tablet, and mobile devices
 - **Modern UI/UX**: Clean, professional design with smooth animations and transitions
+- **Vibrant Hero Section**: Eye-catching gradient background from blue to teal
 - **Interactive Elements**: Dynamic navigation, scroll animations, typing effects, and progress bars
 - **SEO Optimized**: Proper meta tags and semantic HTML for better search engine visibility
 - **Fast Loading**: Lightweight codebase with optimized assets
@@ -71,9 +73,9 @@ Edit `style.css` CSS variables to match your brand:
 
 ```css
 :root {
-    --primary-color: #3b82f6;      /* Main accent color */
-    --secondary-color: #10b981;     /* Secondary accent */
-    --bg-dark: #0f172a;            /* Dark background */
+    --primary-color: #159957;       /* Teal green accent */
+    --secondary-color: #155799;     /* Deep blue */
+    --gradient-hero: linear-gradient(120deg, #155799 0%, #159957 100%);
     /* ... more variables */
 }
 ```
@@ -191,12 +193,13 @@ Clicking email copies it to clipboard
 
 ## 🎨 Color Scheme
 
-The portfolio uses a modern dark theme with blue accents:
+The portfolio uses a vibrant Cayman-inspired theme with teal-to-green gradient:
 
-- **Primary**: Blue (#3b82f6)
-- **Secondary**: Green (#10b981)
-- **Accent**: Orange (#f59e0b)
-- **Background**: Dark Navy (#0f172a)
+- **Primary**: Teal Green (#159957)
+- **Secondary**: Deep Blue (#155799)
+- **Accent**: Forest Green (#1e7e34)
+- **Background**: Clean White (#ffffff)
+- **Hero**: Beautiful Blue-to-Teal Gradient
 
 ## 📊 Performance
 

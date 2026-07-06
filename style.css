@@ -1,29 +1,29 @@
 /* ========================================
-   CSS Variables & Reset - Light Theme
+   CSS Variables & Reset - Cayman Inspired Theme
    ======================================== */
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1e40af;
-    --primary-light: #3b82f6;
-    --secondary-color: #059669;
-    --accent-color: #f59e0b;
-    --accent-pink: #ec4899;
+    --primary-color: #159957;
+    --primary-dark: #0e6b3f;
+    --primary-light: #1fa36c;
+    --secondary-color: #155799;
+    --accent-color: #1e7e34;
+    --accent-blue: #007bff;
     --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;
-    --bg-tertiary: #f1f5f9;
+    --bg-secondary: #f5f7fa;
+    --bg-tertiary: #e9ecef;
     --bg-card: #ffffff;
-    --text-primary: #1e293b;
-    --text-secondary: #475569;
-    --text-muted: #64748b;
-    --border-color: #e2e8f0;
-    --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --gradient-3: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
-    --gradient-hero: linear-gradient(135deg, #eef2ff 0%, #dbeafe 50%, #fce7f3 100%);
+    --text-primary: #2c3e50;
+    --text-secondary: #606c71;
+    --text-muted: #7a8288;
+    --border-color: #d1d5da;
+    --gradient-1: linear-gradient(120deg, #155799 0%, #159957 100%);
+    --gradient-2: linear-gradient(120deg, #1e7e34 0%, #00d4ff 100%);
+    --gradient-3: linear-gradient(120deg, #155799 0%, #159957 100%);
+    --gradient-hero: linear-gradient(120deg, #155799 0%, #159957 100%);
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
-    --shadow-colored: 0 8px 20px rgba(37, 99, 235, 0.15);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+    --shadow-colored: 0 8px 20px rgba(21, 153, 87, 0.2);
     --transition: all 0.3s ease;
 }
 
@@ -175,9 +175,11 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%232563eb" fill-opacity="0.05" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,133.3C672,139,768,181,864,181.3C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background: 
+        linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,133.3C672,139,768,181,864,181.3C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
     background-size: cover;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .hero-container {
@@ -216,27 +218,27 @@ img {
     font-size: 3rem;
     margin-bottom: 1rem;
     animation: fadeInUp 0.8s ease;
-    color: var(--text-primary);
+    color: #ffffff;
     font-weight: 800;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .highlight {
-    background: var(--gradient-3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
+    font-weight: 900;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.95);
     margin-bottom: 1rem;
     animation: fadeInUp 1s ease;
+    font-weight: 500;
 }
 
 .hero-description {
     font-size: 1.1rem;
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.9);
     max-width: 600px;
     margin: 0 auto 2rem;
     animation: fadeInUp 1.2s ease;
@@ -274,29 +276,31 @@ img {
 }
 
 .btn-primary {
-    background: var(--gradient-3);
-    color: white;
-    box-shadow: var(--shadow-colored);
-    border: none;
+    background: #ffffff;
+    color: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffffff;
+    font-weight: 700;
 }
 
 .btn-primary:hover {
-    background: var(--primary-dark);
+    background: rgba(255, 255, 255, 0.9);
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-weight: 700;
 }
 
 .btn-secondary:hover {
-    background: var(--primary-color);
-    color: white;
+    background: #ffffff;
+    color: var(--primary-color);
     transform: translateY(-3px) scale(1.02);
-    box-shadow: var(--shadow-colored);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .social-links {
@@ -312,20 +316,20 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: var(--bg-card);
-    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
     font-size: 1.5rem;
     transition: var(--transition);
-    border: 2px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .social-links a:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: translateY(-3px) rotate(5deg);
-    box-shadow: var(--shadow-colored);
-    border-color: var(--primary-color);
+    background: #ffffff;
+    color: var(--primary-color);
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    border-color: #ffffff;
 }
 
 /* ========================================
@@ -349,9 +353,9 @@ img {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: var(--gradient-3);
+    background: var(--gradient-1);
     border-radius: 2px;
-    box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 2px 10px rgba(21, 153, 87, 0.3);
 }
 
 /* ========================================
@@ -465,7 +469,7 @@ img {
     left: 0;
     width: 100%;
     height: 4px;
-    background: var(--gradient-3);
+    background: var(--gradient-1);
     transform: scaleX(0);
     transition: transform 0.5s ease;
 }
@@ -482,7 +486,7 @@ img {
 
 .stat-item h3 {
     font-size: 3.5rem;
-    background: var(--gradient-3);
+    background: var(--gradient-1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -546,7 +550,7 @@ img {
 
 .skill-icon {
     font-size: 3rem;
-    background: var(--gradient-3);
+    background: var(--gradient-1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -574,10 +578,10 @@ img {
 
 .skill-progress {
     height: 100%;
-    background: var(--gradient-3);
+    background: var(--gradient-1);
     border-radius: 4px;
     transition: width 1s ease;
-    box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 0 10px rgba(21, 153, 87, 0.3);
 }
 
 /* ========================================
@@ -600,7 +604,7 @@ img {
     top: 0;
     bottom: 0;
     width: 3px;
-    background: linear-gradient(to bottom, var(--primary-color), var(--primary-light));
+    background: var(--gradient-1);
     border-radius: 2px;
 }
 
@@ -619,7 +623,7 @@ img {
     border-radius: 50%;
     background: var(--primary-color);
     border: 4px solid var(--bg-secondary);
-    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 0 0 4px rgba(21, 153, 87, 0.2);
     z-index: 1;
 }
 
@@ -707,7 +711,7 @@ img {
     left: 0;
     width: 100%;
     height: 4px;
-    background: var(--gradient-3);
+    background: var(--gradient-1);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -724,7 +728,7 @@ img {
 
 .project-icon {
     font-size: 3rem;
-    background: var(--gradient-3);
+    background: var(--gradient-1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -813,7 +817,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--gradient-3);
+    background: var(--gradient-1);
     border-radius: 50%;
     font-size: 1.5rem;
     flex-shrink: 0;
